@@ -1,0 +1,122 @@
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%)  ; 
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+--ff-main: 'Poppins', sans-serif;
+--ff-light:200;
+--ff-medium:400;
+--ff-bold:600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-main);
+}
+
+body{
+   background-color: hsl(0, 0%, 98%);
+    padding: 3rem 1rem;
+}
+header{
+
+   margin: 50px auto;
+ text-align: center;
+ max-width: 490px;
+}
+header .tag{
+    font-weight: var(--ff-light);
+    font-size: 1.4em;
+    color: var(--Grayish-Blue);
+
+}
+header h1{
+    color: var(--Very-Dark-Blue);
+    font-size: 1.4em;
+    font-weight: var(--ff-bold);
+}
+header .info{
+    color: var(--Grayish-Blue);
+    font-weight: var(--ff-light);
+    font-size: var(--ff-light);
+    padding: 1rem 0;
+
+}
+
+section{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 2rem;
+}
+section .card{
+    width: 260px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 20px 0;
+    padding: 1.25rem;
+}
+
+section h2{
+    font-weight: var(--ff-bold);
+    color: var(--Very-Dark-Blue);
+    font-size: 1.3em;
+    text-align: left;
+}
+section p{
+    color: var(--Grayish-Blue);
+    font-weight: var(--ff-light);
+    font-size: 0.7em;
+    text-align: left;
+    padding-bottom: 30px;
+   
+}
+
+.card img{
+    margin-left: 150px;
+    }
+section  .card1{
+    
+    border-top: 2.5px solid var(--Cyan) ;
+}
+
+section  .card2{
+    
+    border-top: 2.5px solid var(--Red) ;
+}
+
+section  .card3{
+    
+    border-top: 2.5px solid var(--Orange) ;
+}
+
+section  .card4{
+    
+    border-top: 2.5px solid var(--Blue) ;
+}
+
+
+@media (min-width:600px){
+    
+    body{
+        padding: 1rem;
+    }
+        section{
+            margin-top: -30px;
+   height: 490px; 
+    }
+    .card:nth-of-type(1){
+        transform: translate(-110%,170%);
+    }
+    .card:nth-of-type(4){
+        transform: translate(110%,-185%);
+    }
+}
+
